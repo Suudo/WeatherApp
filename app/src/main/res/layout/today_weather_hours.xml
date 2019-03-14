@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        android:background="@android:color/transparent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            android:layout_marginEnd="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="116dp">
+            <ImageView
+                    android:id="@+id/todayWeatherIcon"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_weather"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:id="@+id/todayWeatherCelsius"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:text="25℃"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"/>
+            <TextView
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:text="12:00"
+                    android:id="@+id/todayWeatherHour"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
